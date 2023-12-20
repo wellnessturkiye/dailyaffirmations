@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Wellness - Daily Affirmations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hero is-fullheight is-fullwidth has-text-center height pattern">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-fullwidth is-centered">
+                    <div class="column is-narrow">
+                        <div class="flip-container center" id="flip-toggle" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="images/card.back.png" width="320px" height="480px" alt="card back" />
+                                </div>
+                                <div class="back">
+                                    <div id="quote-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <button class="button is-fullwidth has-text-weight-bold" id="myCard">
+                                Take a Card
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="lightbox" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <button class="delete" id="close-lightbox" aria-label="close"></button>
+    <div class="box">
+      <p>Naughty naughty, please take only one card a day.</p>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

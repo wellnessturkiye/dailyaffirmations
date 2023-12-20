@@ -1,0 +1,122 @@
+/* Flip Container Styles */
+.flip-container {
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+/* Flipper Styles when Hovered */
+/* Flipper Styles */
+.flip-container.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+
+/* Container Dimensions */
+.flip-container,
+.front,
+.back {
+  width: 320px;
+  height: 434px;
+}
+
+/* Flip Animation Speed */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* Backface Visibility for Flipping */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+
+/* Front Panel Styling */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Back Panel Styling */
+.back {
+  transform: rotateY(180deg);
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: white; /* Background color set to white */
+  color: black; /* Text color set to black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Back Panel Heading Styles */
+.back h1 {
+  color: purple;
+  font-size: 25px;
+}
+
+/* Pattern Styles */
+.pattern {
+  background-color: #756BA7;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto; /* Adjust top margin to center vertically */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust width as needed */
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  text-align: center; /* Center align the content */
+}
+
+.delete {
+position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.close-lightbox {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-lightbox:hover,
+.close-lightbox:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
