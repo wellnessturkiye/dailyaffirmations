@@ -35,10 +35,10 @@ $(document).ready(function () {
     { title: "Surprise", description: "Look for the unexpected today." },
     { title: "Wisdom", description: "Act with wisdom and people will respect you." },
     { title: "Listening", description: "Listen and the answer will be revealed." },
-    { title: "Soul Satisfaction", description: "Aim for that which makes your soul rejoice." }
-    { title: "Wishes", description: "Be careful what you wish for as one wish will be granted." }
-    { title: "Pegasus", description: "Open your heart to love and joy." }
-    { title: "King", description: "You are blessed with majesty, vision and power." }
+    { title: "Soul Satisfaction", description: "Aim for that which makes your soul rejoice." },
+    { title: "Wishes", description: "Be careful what you wish for as one wish will be granted." },
+    { title: "Pegasus", description: "Open your heart to love and joy." },
+    { title: "King", description: "You are blessed with majesty, vision and power." },
     { title: "Queen", description: "You are blessed with love, compassion and wisdom." }
         
     ];
